@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import * as readline from 'readline/promises';
 export const run = async () => {
-    return new Promise((resolve, reject)=>{
+    return new Promise((resolve)=>{
         const fileRead = readline.createInterface({
             input: fs.createReadStream('./src/1/val.txt'),
             crlfDelay: Infinity,
@@ -31,9 +31,6 @@ export const run = async () => {
     
                 }
                 calorie = 0;
-                
-                
-    
             })
             resolve(highercalories)
         })
